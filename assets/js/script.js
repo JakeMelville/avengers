@@ -5,8 +5,7 @@ var proxy = "https://cors-anywhere.herokuapp.com/"
 var twitSearch = document.getElementById("twit-search");
 
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer AAAAAAAAAAAAAAAAAAAAACZXMwEAAAAAbTZ9SY0Z8d%2BTq1VFBrqDYs%2FWeKo%3Di1vVMs206mb6CvipDlLvJuGgxI1qzQlRceramS8GCUpNeNw5sx");
-myHeaders.append("Cookie", "guest_id=v1%3A161367772454425496; personalization_id=\"v1_XvRSwPBrVMSD5+4Z3/QK7A==\"");
+myHeaders.append("Authorization", "Bearer AAAAAAAAAAAAAAAAAAAAACZXMwEAAAAAptSr16guvmRb0nQQBaA4%2BwkUmmo%3DXehQzGMHGoTIzKCyXSHgTtbaYcHnAdIUKOanROPSAXHPrARDZQ");
 
 var queryString = proxy + apiUrl + searchInput;
 console.log(queryString)
@@ -17,7 +16,7 @@ console.log(queryString)
 function twitterSearch(event) {
   event.preventDefault();
 
-  fetch(queryString)
+  fetch(queryString, {})
     .then(response => response.json())
 
     .then(function (searchData) {
