@@ -1,7 +1,7 @@
 // var searchInput = document.getElementById("search-input");
-var searchInput = "avengers"
-var apiUrl = "https://api.twitter.com/2/tweets/search/recent?query="
-var proxy = "https://cors-anywhere.herokuapp.com/"
+var searchInput = document.getElementById("search-input");
+var apiUrl = "https://api.twitter.com/2/tweets/search/recent?query=";
+var proxy = "https://cors-anywhere.herokuapp.com/";
 var twitSearch = document.getElementById("twit-search");
 
 var myHeaders = new Headers();
